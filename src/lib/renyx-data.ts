@@ -12,9 +12,9 @@ export const socials: { id: Platform; name: string; desc: string; url: string }[
 export type ContentItem = { platform: Platform; title: string; thumb: "logo" | "world"; position: string; url: string };
 
 export const latestContent: ContentItem[] = [
-  { platform: "youtube", title: "Nuovo gameplay sul canale", thumb: "world", position: "50% 40%", url: socials[0].url },
-  { platform: "twitch", title: "Live stasera: entra nella stream", thumb: "logo", position: "50% 60%", url: socials[3].url },
-  { platform: "tiktok", title: "Le clip migliori della settimana", thumb: "world", position: "15% 30%", url: socials[2].url },
+  { platform: "youtube", title: "Nuovo gameplay sul canale", thumb: "world", position: "50% 40%", url: socials[0]!.url },
+  { platform: "twitch", title: "Live stasera: entra nella stream", thumb: "logo", position: "50% 60%", url: socials[3]!.url },
+  { platform: "tiktok", title: "Le clip migliori della settimana", thumb: "world", position: "15% 30%", url: socials[2]!.url },
 ];
 
 export async function getLatestContent(): Promise<ContentItem[]> {
