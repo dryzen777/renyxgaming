@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logo from "@/assets/renyx-logo.png.asset.json";
-import world from "@/assets/renyx-world.png.asset.json";
+import logoSrc from "@/assets/renyx-logo.png";
+import worldSrc from "@/assets/renyx-world.png";
+const logo = { url: logoSrc };
+const world = { url: worldSrc };
 import { Navbar } from "@/components/renyx/Navbar";
 import { Loader, Particles, Petals, Reveal, useParallax } from "@/components/renyx/Effects";
 import { PlatformIcon } from "@/components/renyx/Icons";
